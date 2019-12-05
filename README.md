@@ -16,12 +16,12 @@ Simple how-to:
 
 3) Configure cron task to run on every minute, example:
 ```
-* * * * bash /path/to/your/m2docoort/async-queue-consumer-m2-3.sh
+* * * * cd /path/to/your/m2docroot && bash /path/to/your/m2docoort/async-queue-consumer-m2-3.sh
 ```
 
 OR you can beautify it with timestamp and output:
 ```
-* * * * bash /path/to/your/m2docroot/async-queue-consumer-m2-3.sh | xargs -L 1 echo date +'[%Y-%m-%d %H:%M:%S] >> /path/to/your/m2docroot/var/cron.log
+* * * * cd /path/to/your/m2docroot && bash /path/to/your/m2docroot/async-queue-consumer-m2-3.sh | xargs -L 1 echo date +'[%Y-%m-%d %H:%M:%S] >> /path/to/your/m2docroot/var/cron.log
 ```
 
 The script idea is based on known problems with cron_consumers_runner task when Kubernetes environment used:
