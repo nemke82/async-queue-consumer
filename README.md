@@ -28,4 +28,9 @@ The script idea is based on known problems with cron_consumers_runner task when 
 https://github.com/humanelement/module-advanced-message-queue-options
 https://github.com/magento/magento2/commit/1d9e07b218c7c8ad1f05706828cb2dd47d2d2d58#diff-b0aaa179dca8aa117df65353dd9f5590
 
-This script purpose is to speed up it's execution and to clear all PID processes at end and avoid PID collision
+This script purpose is to speed up it's execution and to clear all PID processes at end and avoid PID collision.
+
+Graphs of CPU Container usage before and after:
+
+![Before](/before.png)
+![After](/after.png)
